@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="rviz" default="true"/>
+
+  <!-- Gmapping -->
+  <include file="$(find p3at_navigation)/launch/include/gmapping.launch.xml" />
+
+  <!-- Move Base -->
+  <include file="$(find p3at_navigation)/launch/include/move_base.launch.xml" />
+
+  <!-- RViz -->
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="$(anon rviz)" respawn="false" output="screen" args="-d $(find p3at_navigation)/rviz/gmapping.rviz" />
+
+</launch>

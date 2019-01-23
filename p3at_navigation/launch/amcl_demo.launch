@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="rviz" default="true"/>
+
+  <!-- Map Server -->
+ <arg name="map_file" default="$(find p3at_navigation)/map/1.yaml"/>
+ <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!-- AMCL -->
+ <include file="$(find p3at_navigation)/launch/include/amcl.launch.xml" />
+
+  <!-- Move Base -->
+ <include file="$(find p3at_navigation)/launch/include/move_base.launch.xml" />
+
+  <!-- RViz -->
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="$(anon rviz)" respawn="false" output="screen" args="-d $(find p3at_navigation)/rviz/localization.rviz" />
+
+</launch>

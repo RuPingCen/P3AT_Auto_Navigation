@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Load URDF file -->
+  <include file="$(find p3at_description)/launch/state_publisher.launch" />
+
+  <!-- Load robot driver -->
+  <node name="RosAria" pkg="rosaria" type="RosAria">
+    <param name="port" value="/dev/pioneer" />
+  </node>
+
+  <!-- Load rplidar driver -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+
+</launch>
