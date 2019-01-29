@@ -5,7 +5,9 @@
 
   <!-- Load robot driver -->
   <node name="RosAria" pkg="rosaria" type="RosAria">
-    <param name="port" value="/dev/pioneer" />
+    <param name="port" value="/dev/pioneer3at" />
+    <remap from="/RosAria/pose" to="/odom"/>
+    <remap from="/RosAria/cmd_vel" to="/cmd_vel"/>
   </node>
 
   <!-- Load rplidar driver -->
