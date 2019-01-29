@@ -12,6 +12,6 @@
   <link name="base_footprint" />
   <!--rplidar link-->
   <xacro:rplidar_a2 parent="base_link" >
-    <origin xyz="0.2 0.0 0.274" rpy="0 0 ${PI}" />
+    <origin xyz="0.217 0.0 0.274" rpy="0 0 ${PI}" />
   </xacro:rplidar_a2>
 </robot>
