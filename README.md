@@ -5,7 +5,7 @@ Mobilerobots pioneer3at ROS package
 - Ubuntu 16.04 amd64
 - ros-kinetic
 
----
+
 
 ## Installation and Configuration
 ### 1.Compile & Install [AriaCoda](https://github.com/reedhedges/AriaCoda)
@@ -59,7 +59,7 @@ Mobilerobots pioneer3at ROS package
   sudo service udev restart
   ```
 
----
+
 ## How to use
 ### 1.start pioneer3at ros driver & rplidar driver
 ```shell
@@ -70,7 +70,7 @@ then, you can view all of the topic
 rostopic list
 ```
 
-**Note: Before you do, you must first install [rplidar`s ros driver](https://github.com/QuartzYan/rplidar_ros)**
+***Note: Before you do, you must first install [rplidar`s ros driver](https://github.com/QuartzYan/rplidar_ros)***
 
 ### 2.view robot modle
 ```shell
@@ -81,7 +81,7 @@ roslaunch p3at_description display.launch
 ```shell
 roslaunch p3at_navigation gmapping_demo.launch
 ```
-*Note: Before you do, you must first start pioneer3at ros driver and rplidar driver.*
+***Note: Before you do, you must first start pioneer3at ros driver and rplidar driver.***
 
 When you are finished mapping, you can save it use:
 ```shell
@@ -92,7 +92,7 @@ rosrun map_serve map_save -f [map_name]
 ```shell
 roslaunch p3at_navigation amcl_demo.launch
 ```
-*Note: Before you do, you must first start pioneer3at ros driver and rplidar driver.*
+***Note: Before you do, you must first start pioneer3at ros driver and rplidar driver.***
 
 You can revise ***amcl_demo.launch*** to load a different map.
 
