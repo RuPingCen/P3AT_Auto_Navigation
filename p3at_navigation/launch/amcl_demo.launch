@@ -3,7 +3,7 @@
   <arg name="rviz" default="true"/>
 
   <!-- Map Server -->
- <arg name="map_file" default="$(find p3at_navigation)/map/1.yaml"/>
+ <arg name="map_file" default="$(find p3at_navigation)/map/cqu_lab.yaml"/>
  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- AMCL -->

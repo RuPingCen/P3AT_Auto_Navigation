@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="rviz" default="true"/>
+
+  <!-- Gmapping -->
+  <include file="$(find p3at_navigation)/launch/include/gmapping.launch.xml" />
+
+</launch>

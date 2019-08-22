@@ -10,7 +10,6 @@
     <remap from="/RosAria/cmd_vel" to="/cmd_vel"/>
   </node>
 
-  <!-- Load rplidar driver -->
-  <include file="$(find rplidar_ros)/launch/rplidar.launch"/>
-
+  <!-- Load hokuyo driver -->
+  <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
 </launch>

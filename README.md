@@ -1,3 +1,7 @@
+This rospackage is modify from Mobilerobots, and I have gave a Chineses step for install the package in Pioner3-AT robots.
+
+address: https://blog.csdn.net/crp997576280/article/details/98470571
+
 # pioneer3at_pkg
 Mobilerobots pioneer3at ROS package
 
